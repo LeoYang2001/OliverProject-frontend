@@ -115,7 +115,7 @@ export default function HeaderWebSocketControls({ baseTextColor, onWebSocketChan
         {connectionState === 'connecting' && (
           <div className="animate-spin rounded-full h-3 w-3 border-b border-white"></div>
         )}
-        {(connectionState === 'disconnected' || connectionState === 'error') && (
+        {(connectionState === 'disconnected' || connectionState === 'error' || connectionState === 'connecting') && (
           <>
             <input
               type="text"
